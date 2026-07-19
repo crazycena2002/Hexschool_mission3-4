@@ -13,7 +13,6 @@ a {
   text-decoration: none;
   color: inherit;
   text-underline-offset: 4px;
-  display: block;
 }
 
 body {
@@ -22,14 +21,19 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* 格線系統設定 */
-/* 網格欄寬計算公式：(容器寬度 - 所有 gutter) / 總欄數 * 佔用欄數 + 欄內 gutter */
-/* gutter 總寬 = 24px * 11（12欄之間共 11 個間距） */
-
 /* container設定 */
 .container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.container-md {
   max-width: 856px;
   margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 /* 通用設定 */
@@ -47,6 +51,18 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 .hero {
@@ -68,12 +84,32 @@ body {
   margin-bottom: 4px;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
 
 .mt-48 {
@@ -82,6 +118,10 @@ body {
 
 .mt-64 {
   margin-top: 64px;
+}
+
+.mr-8 {
+  margin-right: 8px;
 }
 
 .mr-24 {
@@ -110,6 +150,10 @@ body {
 
 .pt-32 {
   padding-top: 32px;
+}
+
+.py-8 {
+  padding: 8px 0;
 }
 
 .py-12 {
@@ -168,24 +212,20 @@ body {
   padding-left: 12px;
 }
 
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
 .text-center {
   text-align: center;
 }
 
+.text-danger-300 {
+  color: $danger-300;
+}
+
 .text-primary-400 {
   color: $primary-400;
+}
+
+.text-neutral-500 {
+  color: $neutral-500;
 }
 
 .text-neutral-600 {
@@ -245,10 +285,6 @@ body {
   padding: 64px 0;
 }
 
-.footertext {
-  color: $neutral-600;
-}
-
 /* 元件 */
 .btn {
   border-radius: 4px;
@@ -265,10 +301,14 @@ body {
   color: $neutral-0;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* RWD container設定 */
 @media (max-width: 575px) {
   .container-xs {
-    max-width: 375px;
+    max-width: 551px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -283,12 +323,20 @@ body {
     margin-left: 0;
   }
 
-  .d-block {
+  .d-block-xs {
     display: block;
+  }
+
+  .d-none-xs {
+    display: none;
   }
 
   .px-16-xs {
     padding: 16px 0;
+  }
+
+  .py-0-xs {
+    padding: 0;
   }
 
   .py-12-xs {
@@ -319,6 +367,14 @@ body {
     margin-top: 32px;
   }
 
+  .mb-8-xs {
+    margin-bottom: 8px;
+  }
+
+  .mb-12-xs {
+    margin-bottom: 12px;
+  }
+
   .mb-32-xs {
     margin-bottom: 32px;
   }
@@ -327,12 +383,20 @@ body {
     margin-bottom: 16px;
   }
 
+  .mb-24-xs {
+    margin-bottom: 24px;
+  }
+
   .mb-0-xs {
     margin-bottom: 0;
   }
 
   .mr-0-xs {
     margin-right: 0;
+  }
+
+  .mr-8-xs {
+    margin-right: 8px;
   }
 
   .mx-16-xs {
@@ -353,5 +417,12 @@ body {
   .banner-xs {
     text-align: left;
     padding: 24px 0;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+  .over-hidden-xs {
+    display: none;
   }
 }

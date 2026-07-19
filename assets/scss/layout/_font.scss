@@ -45,6 +45,26 @@
   font-weight: 700;
 }
 
+@media (max-width: 575px) {
+  .heading-h4-xs {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .heading-h5-xs {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+  .heading-h6-xs {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+}
+
 /* Label */
 
 .label-lg {
@@ -52,7 +72,7 @@
   font-weight: 500;
 }
 
-.label-xs {
+.label-md {
   font-size: 16px;
   font-weight: 500;
 }
@@ -74,7 +94,7 @@
   font-weight: 400;
 }
 
-.paragraph-xs {
+.paragraph-md {
   font-size: 16px;
   font-weight: 400;
 }

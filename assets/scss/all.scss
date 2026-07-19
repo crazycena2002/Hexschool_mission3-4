@@ -3,8 +3,8 @@
 
 @import "layout/reset";
 @import "layout/base";
+@import "layout/col";
+@import "layout/元件";
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-
+@import "pages/products";
 @import "./pages/index.scss";
