@@ -38,8 +38,8 @@
 .button-action {
   width: 50%;
 }
-@media(max-width:575px) {
-  .btn-heart-xs{
+@media (max-width: 575px) {
+  .btn-heart-xs {
     font-size: 24px;
     padding: 12px;
     display: block;
@@ -54,12 +54,10 @@
     padding-right: 12px;
   }
 
-   .product-scroll-item {
+  .product-scroll-item {
     flex: 0 0 80%;
     width: 80%;
     padding-right: 12px;
     padding-left: 0;
   }
-
-  
 }

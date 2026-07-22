@@ -34,12 +34,24 @@
     width: calc(50% - 16px);
   }
 
-  .btn-flex-xs{
-    flex:1;
+  .btn-flex-xs {
+    flex: 1;
   }
 }
 
 .btn.active {
+  background-color: $primary-300;
+}
+
+.btn-bg-100{
+  background-color: $primary-100;
+}
+
+.btn-bg-200{
+  background-color: $primary-200;
+}
+
+.btn-bg-light {
   background-color: $primary-300;
 }
 
@@ -50,4 +62,8 @@
 
 .page-item.btn {
   padding: 8px 15px;
+}
+
+.index-btn{
+  display: flex;
 }

@@ -2,10 +2,12 @@
 .dispaly-1 {
   font-size: 64px;
   line-height: 1.2;
+  font-weight: 700;
 }
-.dispaly-1 {
+.dispaly-2 {
   font-size: 48px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 /* Heading -  Line-height:1.2 */
@@ -46,6 +48,18 @@
 }
 
 @media (max-width: 575px) {
+.heading-h2-xs {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.heading-h3-xs {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
   .heading-h4-xs {
     font-size: 24px;
     line-height: 1.2;
@@ -53,16 +67,16 @@
   }
 
   .heading-h5-xs {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-}
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
 
   .heading-h6-xs {
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 700;
-}
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
 }
 
 /* Label */
