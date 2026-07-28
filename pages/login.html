@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <div class="py-64 py-0-xs">
+        <div class="container">
+          <div class="row row-xs">
+            <div class="col-5 col-4-xs">
+              <picture class="login-picture">
+                <source
+                  class="d-none-xs"
+                  srcset="/assets/images/login-sm.png"
+                  media="(max-width:575px)"
+                />
+                <img src="/assets/images/login.png" alt="" />
+              </picture>
+            </div>
+            <div class="col-7 col-4-xs">
+              <div class="login-bg px-80">
+                <div class="mb-32 mb-24-xs">
+                  <h4 class="heading-h3 text-center mb-32 mb-24-xs">歡迎 !</h4>
+                  <div class="d-flex justify-center align-center">
+                    <p
+                      class="heading-h6 py-12 d-flex-1 text-center border-bottom-black"
+                    >
+                      登入
+                    </p>
+                    <p
+                      class="heading-h6 text-neutral-600 py-12 d-flex-1 text-center border-bottom-grey"
+                    >
+                      註冊
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="media mb-8">
+                    <img src="/assets/images/facebook.svg" alt="" />
+                    <p class="ml-12">Facebook 登入</p>
+                  </div>
+                  <div class="media mb-8">
+                    <img src="/assets/images/apple.svg" alt="" />
+                    <p class="ml-12">Apple 登入</p>
+                  </div>
+                  <div class="media">
+                    <img src="/assets/images/google.svg" alt="" />
+                    <p class="ml-12">Google 登入</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); %>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -35,6 +35,11 @@ body {
   padding-right: 12px;
   padding-left: 12px;
 }
+
+.container-xxs {
+  max-width: 636px;
+  margin: 0 auto;
+}
 @media (max-width: 575px) {
   .container-xs {
     max-width: 375px;
@@ -47,6 +52,14 @@ body {
 /* 通用設定 */
 .d-flex {
   display: flex;
+}
+
+.d-flex-1 {
+  flex: 1;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-between {
@@ -152,6 +165,10 @@ body {
   margin-right: 48px;
 }
 
+.ml-12 {
+  margin-left: 12px;
+}
+
 .my-48 {
   margin: 48px 0;
 }
@@ -170,6 +187,10 @@ body {
 
 .px-24 {
   padding: 0 24px;
+}
+
+.px-130 {
+  padding: 0 130px;
 }
 
 .py-8 {
@@ -240,6 +261,10 @@ body {
   padding-right: 8px;
 }
 
+.pr-12 {
+  padding-right: 12px;
+}
+
 .pl-8 {
   padding-left: 8px;
 }
@@ -250,6 +275,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .text-danger-300 {
@@ -383,6 +412,14 @@ body {
     display: none;
   }
 
+  .justify-center-xs {
+    justify-content: center;
+  }
+
+  .align-center-xs {
+    align-items: center;
+  }
+
   .flex-wrap-xs {
     flex-wrap: wrap;
   }
@@ -403,8 +440,12 @@ body {
     overflow: hidden;
   }
 
+  .text-start-xs {
+    text-align: start;
+  }
+
   .px-16-xs {
-    padding: 16px 0;
+    padding: 0 16px;
   }
 
   .py-0-xs {
@@ -412,11 +453,11 @@ body {
   }
 
   .py-12-xs {
-    padding: 0 12px;
+    padding: 12px 0;
   }
 
   .py-24-xs {
-    padding: 0 24px;
+    padding: 24px 0;
   }
 
   .py-32-xs {
@@ -505,8 +546,5 @@ body {
 
   .mobile-only {
     display: block;
-  }
-  .over-hidden-xs {
-    display: none;
   }
 }
